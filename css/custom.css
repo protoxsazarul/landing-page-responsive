@@ -2,49 +2,303 @@ body {
     display: block;
     margin: 0px;
     padding: 0px;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+    font-size: 16px;
+    line-height: 1.42857143;
 }
+
+a {
+    text-decoration: none
+}
+
 /*------------------------------------------------------------------------*/
 /*                                titre et menu*/
 /*------------------------------------------------------------------------*/
-#top{
-    background-color:#212121;
+
+#menu {
+
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+#list {
+    display: none;
+}
+
+#nav {
+    width: 100%;
+    text-align: center;
+    padding: 0px
+}
+
+#nav a {
+    color: white;
+}
+
+ul {
+    display: none;
+    margin: 0;
+    list-style: none;
+}
+
+li {
+    margin: 1%;
+}
+
+.border {
+    display: block;
+    border-top: 3px solid white;
+    width: 100%;
+}
+
+#top {
+    background-color: #212121;
     padding: 2%;
+    position: fixed;
+    width: 100%;
 }
-.toggle_btn{
-    height: 30px;
-    width: 30px;
+
+.fa.fa-bars {
     position: relative;
-    float:right;
-    margin-right: 10px;
-    cursor:pointer;
-    
+    color: white;
+    float: right;
+    margin-right: 6%;
+    padding: 3px 5px;
+    border: 1px solid grey;
+    border-radius: 2px;
+
 }
+
+
+/*replace the content value with the
+corresponding value from the list below*/
+
 
 /*------------------------------------------------------------------------*/
 /*                            HOME                                        */
 /*------------------------------------------------------------------------*/
-#home h2{
+#home h2 {
     margin: 0px
 }
-#home {
+
+#font {
+    padding: 30px 15px;
     text-align: center;
-    width: 100%;
-    height: 100%;
     color: white;
-    background-image: url(/images/hero-image.jpg);
-    background-repeat: no-repeat;
-    background-size: auto
+    background-image: url(../images/hero-image.jpg);
+    margin-bottom: 6%;
 }
 
-#home button {
+#home a {
+    display: inline-block;
     margin: 30px;
-    background: #D95F49;
+    background: #d43f3a;
     border: none;
-    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
     text-align: left;
     text-decoration: none;
     padding: 2%;
+    user-select: none;
 }
+
+#home img {
+    margin: auto;
+    padding: auto;
+    display: block;
+}
+
 /*------------------------------------------------------------------------*/
 /*                                Who we are*/
 /*------------------------------------------------------------------------*/
+#who {
+    text-align: center;
+    padding: 0px 15px;
+}
+
+#weAre h2 {
+    color: #d43f3a;
+}
+
+#weAre hr {
+    border-top: 1px solid #e74c3d;
+    width: 160px;
+    margin-top: 15px;
+
+}
+
+#weAre a {
+    color: #e74c3d;
+    text-decoration: none;
+}
+
+/*------------------------------------------------------------------------*/
+/*                                   Get Involved*/
+/*------------------------------------------------------------------------*/
+.Involved h2 {
+    text-align: center;
+    color: #e74c3d;
+
+}
+
+.Involved hr {
+    color: #e74c3d;
+    border-top: 1px solid #e74c3d;
+    width: 160px;
+}
+
+.Involved {
+    padding-top: 3%;
+    background-color: whitesmoke;
+}
+
+.row h3 {
+    color: #d43f3a;
+}
+
+.row {
+    text-align: center;
+    padding: 30px 15px;
+
+}
+
+.Involved a {
+    padding: 6px 12px;
+    background: white;
+    border: 1px solid darkgrey;
+    border-radius: 4px;
+    color: #d43f3a;
+
+}
+
+.Involved a:active {
+    /*normalement c'est :visited mais pour des raison de test c'est active*/
+    background-color: lightgrey;
+    text-decoration: none;
+    color: black;
+}
+
+.Involved a:hover {
+    background-color: lightgrey;
+}
+
+/*------------------------------------------------------------------------*/
+/*                                   Footer*/
+/*------------------------------------------------------------------------*/
+footer {
+    background-color: #f74c3c;
+    padding-top: 150px;
+    padding-bottom: 30px;
+}
+
+/*------------------------------------------------------------------------*/
+/*                                   back to top*/
+/*------------------------------------------------------------------------*/
+
+
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 30px;
+    background: rgba(224, 224, 224, 0.145);
+    color: #444;
+    cursor: pointer;
+    border: 1px grey;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+}
+
+#back-to-top:hover {
+    background: #e9ebec;
+}
+
+/*------------------------------------------------------------------------*/
+/*                                   MediaQuerries*/
+/*------------------------------------------------------------------------*/
+@media screen and (min-width: 767px) {
+
+    #list {
+        display: block;
+        float: right;
+    }
+
+    #btnMenu {
+        display: none;
+    }
+
+    #list a {
+        color: white;
+        margin: 5px;
+    }
+
+    #who {
+        padding: 40px 70px;
+    }
+
+    .row {
+        text-align: center;
+        padding: 40px 70px;
+
+    }
+
+    #top {
+        padding: 2% 0px;
+    }
+
+    #logoMenu {
+        padding: 0px 70px
+    }
+
+    #font {
+        padding: 40px 70px;
+    }
+}
+
+@media screen and (min-width: 1199px) {
+    body {
+        font-size: 20px;
+    }
+
+    #home a {
+        padding: 1%;
+        font-size: 25px;
+    }
+
+    #who{
+        padding: 40px 15%;
+    }
+
+    #inv {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        padding: 40px 15%
+    }
+
+    #inv div {
+        margin: 5px;
+    }
+
+    #top {
+        padding: 0px 0px;
+        grid-area: header;
+    }
+
+    #logoMenu {
+        padding: 3px 70px;
+    }
+
+    #font {
+        padding: 40px 15%;
+    }
+
+    footer img {
+        padding-left: 140px;
+    }
+}

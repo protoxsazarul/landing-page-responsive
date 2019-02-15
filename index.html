@@ -14,46 +14,91 @@
 
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-
+    <script src="js/Script.js"></script>
     <!-- Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet">
 </head>
 
 <body>
     <nav id="top">
-       <img src="/images/top-logo.png" alt="ONEMILLIONSLINE_">
-        <div class="toggle_btn">
-            <span></span>
+       <div id="logoMenu">
+        <img src="images/top-logo.png" alt="ONEMILLIONSLINE_">
+         <div id="list">
+            <a href="#who">Who we are</a>
+            <a href="#get-involved">Get Involved</a>
         </div>
-        <div class="menu nav">
-            <a href=""></a>
-            <a href=""></a>
+        <div id="btnMenu" class="fa fa-bars"></div>
+        <ul id="nav">
+            <li><a href='#who'>Who we are</a></li>
+            <li><a href="#get-involved">Get Involved</a></li>
+        </ul>
         </div>
     </nav>
 
     <div id="font">
         <div id="home">
-            <h2>Our goal is to inspire Tallahasse to write 1,000,000 line of code_</h2>
+            <h2>Our goal is to inspire Tallahasse <br/>to write 1,000,000 line of code_</h2>
             <p>all over the countre people are taking the <strong>HOUR OF CODE</strong> challenge issued by <strong>CODE.org</strong> milions of line of code are being written. in the capital of florida, talahasse , the community is taking the challenge abd our goal is to write 1,000,000 lines of</p>
 
-            <button>Learn more</button>
+            <a href="">Learn more »</a>
+            <img src="images/code.png" title="Code.org logo" alt="Code.org">
         </div>
     </div>
+
     <div id="who">
-        <img src="/images/academy-brand-med.png">
+        <div id="weAre">
+            <img src="images/academy-brand-med.png" alt="MASSIVE Academy" title="MASSIVE Academy">
+            <h2>WHO WE ARE</h2>
+            <hr>
+            <p>We are <a href="" target="_blank">MASSIVE Academy</a>. We aim to improve education through both method - effective project-based learning - and material - by teaching skills that are applicable to improving your life today.</p>
+        </div>
     </div><!-- /#who -->
 
     <div id="get-involved">
         <!-- Votre code ici -->
+        <div class="Involved">
+            <h2>GET INVOLVED</h2>
+            <hr>
+            <div id="inv" class="row">
+                <div class="students">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h3>STUDENTS</h3>
+                    <p>Want to learn how to code? Want to help us get to 1,000,000 lines ? Click the button below and we'll let you know how to get involved.</p>
+                    <p><a class="btn btn-default" href="" role="button">Start Learning »</a></p>
+                </div>
+                <div class="Educators">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h3>EDUCATORS</h3>
+                    <p>Want to bring this initiative to your school or institution? Awesome! Click the button below and we'll make it happen.</p>
+                    <p><a class="btn btn-default" href="" target="_blank" role="button">Join the Initiative »</a></p>
+                </div>
+                <div class="Sponsors">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-money fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h3>SPONSORS</h3>
+                    <p>We love all the support we get to help host more events, and empower more lives with the knowledge of coding. Click to get involved.</p>
+                    <p><a class="btn btn-default" href="" target="_blank" role="button">Give Support »</a></p>
+                </div>
+            </div>
+        </div>
     </div><!-- /#get-involved -->
 
     <footer>
-        <!-- Votre code ici -->
+        <img src="images/one-million-bottom-brand.png">
     </footer>
 
-    <div id="back-to-top">
-        <!-- Votre code ici -->
+    <div id="backtop">
+        <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
     </div><!-- /#back-to-top -->
 
 </body>
